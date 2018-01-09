@@ -1,7 +1,123 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #0c0d0c;
+  font-family: palatino, sans-serif;
+}
+
 h1 {
+  color: #f0f1ff;
   text-align: center;
+
 }
 
 h2 {
   text-align: center;
+  color: #f0f1ff;
+}
+
+h3 {
+  text-align: center;
+  color: #f0f1ff;
+  margin-top: 40px;
+}
+
+ol {
+  text-align: left;
+  color: #f0f1ff;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li:hover {
+  color: #ff0000;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  border: 1px black solid;
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+}
+
+td {
+  border: 1px black solid;
+  padding: 5px 15px 5px 15px;
+  margin: 0;
+}
+
+.rules {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  color: #f0f1ff;
+}
+
+.rules p {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  padding: 25px;
+}
+
+.buttons.onclick {
+
+}
+
+.choice {
+  background-color: transparent;
+  color: #f0f1ff;
+  border: solid 1px #f0f1ff;
+  padding: 10px 30px 10px 30px;
+}
+
+.choice:hover {
+  background-color: #2b0056;
+}
+
+.rock {
+}
+
+.paper {
+}
+
+.scissors {
+}
+
+.score {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  color: #f0f1ff;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+#userScore {
+  color: white;
+}
+
+#computerScore {
+  color: white;
 }
