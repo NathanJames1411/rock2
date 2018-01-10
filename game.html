@@ -5,17 +5,22 @@
       <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
-      <h1>Rock, Paper, Scissors</h1>
-      <h2>Choose:</h2>
-      <div class="buttons">
-        <button class="choice" id="rock">Rock</button>
-        <button class="choice" id="paper">Paper</button>
-        <button class="choice" id="scissors">Scissors</button>
-      </div>
-      <div class='results'>
-        <div class="scoreBoard">
-          <div id="userScore"></div>
-          <div id="computerScore"></div>
+      <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <h2>Choose:</h2>
+        <div class="buttons">
+          <button class="choice" id="rock">Rock</button>
+          <button class="choice" id="paper">Paper</button>
+          <button class="choice" id="scissors">Scissors</button>
+        </div>
+        <div class='results'>
+          <h3>Score:</h3>
+          <div>
+            <p id="userScore">Your Score: 0</p>
+            <p id="computerScore">Computer Score: 0</p>
+            <p class="roundScore"></p>
+            <p id="finalResults"></p>
+          </div>
         </div>
       </div>
       <script src="scripts/main.js">
