@@ -5,6 +5,7 @@ const results = document.querySelector('.results');
 const roundScore = document.querySelector('.roundScore');
 const p = document.createElement('p');
 
+let drawScore = 0;
 let userScore = 0;
 let computerScore = 0;
 let maxRounds = 5;
@@ -55,17 +56,19 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
       roundsPlayed++;
+      drawScore++;
+      document.querySelector('#drawScore').textContent = "Draws: " + drawScore;
       return "Draw! You both chose rock!";
   } else if (computerSelection === "paper") {
       roundsPlayed++;
       computerScore++;
       document.querySelector("#computerScore").textContent = "Computer Score: " + computerScore;
-      return "You lose! Paper beats rock!";
+      return "You lose this round! Paper beats rock!";
   } else {
       roundsPlayed++;
       userScore++;
       document.querySelector("#userScore").textContent = "Your Score: " + userScore;
-      return "You win! Rock beats scissors!";
+      return "You win this round! Rock beats scissors!";
     };
   };
 
@@ -74,15 +77,17 @@ function playRound(playerSelection, computerSelection) {
       roundsPlayed++;
       userScore++;
       document.querySelector("#userScore").textContent = "Your Score: " + userScore;
-      return "You win! Paper beats rock!";
+      return "You win this round! Paper beats rock!";
   } else if (computerSelection === "paper") {
       roundsPlayed++;
+      drawScore++;
+      document.querySelector('#drawScore').textContent = "Draws: " + drawScore;
       return "Draw! You both chose paper!";
   } else {
       roundsPlayed++;
       computerScore++;
       document.querySelector("#computerScore").textContent = "Computer Score: " + computerScore;
-      return "You lose! Scissors beats paper!";
+      return "You lose this round! Scissors beats paper!";
     };
   };
 
@@ -91,14 +96,16 @@ function playRound(playerSelection, computerSelection) {
       roundsPlayed++;
       computerScore++;
       document.querySelector("#computerScore").textContent = "Computer Score: " + computerScore;
-      return "You lose! Rock beats scissors!";
+      return "You lose this round! Rock beats scissors!";
   } else if (computerSelection === "paper") {
       roundsPlayed++;
       userScore++;
       document.querySelector("#userScore").textContent = "Your Score: " + userScore;
-      return "You win! Scissors beats paper!";
+      return "You win this round! Scissors beats paper!";
   } else {
       roundsPlayed++;
+      drawScore++;
+      document.querySelector('#drawScore').textContent = "Draws: " + drawScore;
       return "Draw! You both chose scissors!";
     };
   };

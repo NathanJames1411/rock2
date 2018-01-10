@@ -1,37 +1,71 @@
 body {
   padding: 0;
   margin: 0;
-  background: #4717f6;
+  background-image: url('/Users/NK/coding-projects/the-odin-project/nate/rock2/images/Dirty-Dark-Black-Wall-Texture.jpg');
   font-family: palatino, sans-serif;
 }
 
 .container {
-  background: #0c0d0c;
-  margin: 50px;
-  padding-bottom: 250px;
 }
 
 h1 {
-  color: #4717f6;
+  color: #66fcf1;
   text-align: center;
   padding-top: 20px;
-  border-bottom: #4717f6 10px;
+  border-bottom: #66fcf1 10px;
   width: 100%;
+  font-size: 65px;
 }
 
 h2 {
   text-align: center;
-  color: #4717f6;
+  color: white;
 }
 
 h3 {
   text-align: center;
-  color: #4717f6;
+  color: white;
   margin-top: 40px;
 }
 
 p {
-  color: #4717f6;
+  color: #66fcf1;
+  text-align: center;
+}
+
+.topnav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+.topnavright {
+  float: right;
+}
+
+.topnavright a {
+  text-decoration: none;
+  font-size: 13px;
+  font-family: arial,sans-serif;
+  padding-left: 8px;
+  margin-right: 20px;
+  color: #c5c6c7;
+}
+
+.topnavleft a {
+  text-decoration: none;
+  font-size: 13px;
+  float: left;
+  margin-left: 2%;
+  font-family: arial,sans-serif;
+  color: #c5c6c7;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.scoreDiv {
   text-align: center;
 }
 
@@ -42,30 +76,42 @@ p {
 
 .choice {
   background-color: transparent;
-  color: #4717f6;
-  border: solid 1px #4717f6;
-  padding: 10px 30px 10px 30px;
+  color: #66fcf1;
+  border: solid 1px #66fcf1;
+  padding: 20px 60px 20px 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
 }
 
 .choice:hover {
-  background-color: #a239ca;
+  background-color: #45a29e;
+  color: #1f2833;
+  transform: scale(1.2);
+  font-size: 15px;
 }
 
 .choice.onclick {
 
 }
 
-.roundScore {
+.roundScore p {
+  color: #c5c6c7;
+}
+
+#drawScore {
+
 }
 
 #userScore {
-  color: #4717f6;
+  color: #66fcf1;
 }
 
 #computerScore {
-  color: #4717f6;
+  color: #66fcf1;
 }
 
 #finalResults {
-  font-size: 25px;
+  font-size: 45px;
+  color: white;
 }
